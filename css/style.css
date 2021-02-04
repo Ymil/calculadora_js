@@ -1,0 +1,15 @@
+#calculadora{
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#calculadoraInput{
+    width: 100%;
+}
+
+button{
+    margin: 5px;
+    width: 50px;
+    border-radius:5px;
+}

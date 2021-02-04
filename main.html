@@ -1,0 +1,19 @@
+<html ng-app="calculadoraApp">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous">
+        <link rel="stylesheet" href='css/style.css' />
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js'></script>
+        <script src='js/calculadoraController.js'></script>
+    </head>
+    <body ng-controller='calculadoraController'>
+        <div id='calculadora'>
+            <input type='text' id='calculadoraInput' ng-model='calculadoraVars.value'/>
+            <div ng-repeat='row in calculadoraArray'>
+                <button ng-repeat='button in row' value='{{ button }}' 
+                    ng-click='click(button)' class='btn btn-primary'>{{ button }}</button>
+            </div>
+        </div>
+    </body>    
+</html>
